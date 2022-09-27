@@ -1,0 +1,77 @@
+.stages
+  margin-bottom: 21rem
+  &-title
+    margin-bottom: 8.7rem
+  &-content
+    display: flex
+    justify-content: space-between
+  a.stages-item
+    &:hover
+      .stages-item
+        &__circle
+          &::before
+            opacity: 1
+        &__title
+          color: #fff
+  &-item
+    text-align: center
+    &:first-child
+      margin-right: 1.5rem
+    // &:nth-child(5n)
+    //   margin-right: -2rem
+    &:nth-child(6n)
+      margin-left: -4.5rem
+      margin-right: -2rem
+    &:not(:last-child)
+      .stages-item__circle
+        &::after
+          content: ''
+          position: absolute
+          top: 53%
+          right: -7.7rem
+          transform: translateY(-50%)
+          width: 4.8rem
+          height: 1rem
+          background: url(../img/stages-img.svg) 50% no-repeat
+          background-size: contain
+    // &:hover
+    //   .stages-item
+    //     &__circle
+    //       &::before
+    //         opacity: 1
+    //     &__title
+    //       color: #fff
+    &__circle
+      width: 14.3rem
+      height: 14.3rem
+      border-radius: 50%
+      background: #1C202A
+      border: .15rem solid #393D48
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 auto 2.7rem
+      position: relative
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        inset: -.15rem
+        background: url(../img/stages-bg.svg) 50% no-repeat
+        background-size: contain
+        z-index: -1
+        opacity: 0
+        pointer-events: none
+        transition: opacity .25s
+    &__number
+      font-size: 2.76rem
+      font-weight: 700
+      margin-left: -0.5rem
+      span
+        font-size: 1.8rem
+    &__title
+      font-size: 2.4rem
+      font-weight: 700
+      line-height: 1.42
+      color: #9BA2B3
+      transition: color .25s

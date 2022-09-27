@@ -1,0 +1,112 @@
+.services
+  margin-bottom: 21rem
+  position: relative
+  &-decor
+    position: absolute
+    top: 28rem
+    right: -8.2rem
+    font-size: 13rem
+    font-weight: 700
+    text-transform: uppercase
+    color: rgba(66, 71, 83, 0.12)
+    transform: rotate(-90deg)
+    pointer-events: none
+  &-slider
+    padding-left: 6.5rem
+    &__item
+      display: flex
+      justify-content: space-between
+      padding: 5.5rem 0 3rem 3.5rem
+      &-img
+        width: 48.6rem
+        height: 48.6rem
+        flex-shrink: 0
+        position: relative
+        z-index: 1
+        img
+          height: 100%
+          object-fit: cover
+        .img-decor
+          position: absolute
+          width: 46.9rem
+          height: 13.4rem
+          border: 1px solid rgba(255, 255, 255, 0.4)
+          z-index: -1
+          &.img-decor_red
+            border-color: #E41713
+          &-1
+            top: -1.6rem
+            left: -3.3rem
+          &-2
+            width: 23.6rem
+            height: 16.9rem
+            top: -5.2rem
+            right: -2rem
+          &-3
+            width: 12.4rem
+            height: 25.4rem
+            bottom: -2.5rem
+            right: -3rem
+          &-4
+            width: 27.2rem
+            height: 18.9rem
+            bottom: -1.5rem
+            left: -3.3rem
+      &-text
+        width: 91.9rem
+        padding-top: 10.6rem
+        padding-right: 14rem
+      &-title
+        font-size: 5.5rem
+        font-weight: 700
+        margin-bottom: 4.5rem
+      &-description
+        margin-left: 0.4rem
+        font-size: 1.8rem
+        line-height: 1.44
+        letter-spacing: .02em
+        color: #E8EDF2
+        p
+          &:not(:last-child)
+            margin-bottom: 2.7rem
+  &-pagination.swiper-pagination
+    bottom: auto
+    top: 48%
+    left: 0
+    transform: translateY(-50%)
+    flex-direction: column
+    .swiper-pagination-bullet
+      margin: 1.1rem 0
+  .slider-kit
+    position: absolute
+    top: 5.5rem
+    left: 70rem
+  &-thumbs
+    margin-top: 4.9rem
+    margin-left: 25.2rem
+    &__item
+      width: 24.98rem
+      opacity: .6
+      // transform: translateX(-31.5rem)
+      &.swiper-slide-thumb-active
+        opacity: 1
+      &:not(:last-child)
+        margin-right: 6.6rem
+      &:last-child
+        margin-right: 15.4rem
+      // &.swiper-slide-next
+      //   transform: translateX(-31.5rem)
+      //   ~ .swiper-slide
+      //     transform: translateX(-31.5rem)
+      &-img
+        width: 100%
+        height: 32.2rem
+        margin-bottom: 3rem
+        img
+          height: 100%
+          object-fit: cover
+      &-title
+        padding-right: 1rem
+        font-size: 2.2rem
+        font-weight: 700
+        line-height: 1.23

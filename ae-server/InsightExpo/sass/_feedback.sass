@@ -1,0 +1,59 @@
+.feedback
+  margin-bottom: 21rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-form
+    width: 35%
+    flex-shrink: 0
+  &-img
+    width: 69.5rem
+    flex-shrink: 0
+    margin-top: -0.2rem
+    margin-right: 7rem
+    position: relative
+    z-index: 1
+    .square
+      position: absolute
+      top: 0
+      left: 0
+      width: 5.6rem
+      height: 5.6rem
+      border: 1px solid rgba(#fff, .4)
+      &::after
+        content: ''
+        position: absolute
+        inset: 1.3rem
+        background: #E41713
+      &-2
+        top: auto
+        left: auto
+        right: 0
+        bottom: 10.8rem
+      &-3
+        width: 11.6rem
+        height: 11.6rem
+        top: auto
+        left: 5.2rem
+        bottom: 5.6rem
+        &::after
+          inset: 2.8rem
+    &__decor
+      position: absolute
+      top: 3.1rem
+      left: -13.5rem
+      width: 41.2rem
+      height: 22.7rem
+      border: 1px solid #E41713
+      z-index: -1
+      &.decor-w
+        border-color: rgba(#fff, .4)
+        transform: rotate(90deg)
+      &-2
+        left: auto
+        top: 2rem
+        right: 2rem
+      &-3
+        top: auto
+        bottom: 2rem
+        left: 1.5rem

@@ -1,0 +1,119 @@
+.header
+  // position: fixed
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 100
+  // transition: background .2s
+  // &.scroll
+  //   background: rgba(10, 12, 19, 0.6)
+  //   backdrop-filter: blur(17rem)
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 52.3%
+    // height: .15rem
+    height: 1px
+    // background: rgba(255, 255, 255, 0.3)
+    background: rgba(255, 255, 255, 0.1)
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1.3rem 0
+  &-logo
+    width: 25.3rem
+  &-img
+    width: 21.8rem
+    margin-left: 30rem
+  &-nav
+    display: flex
+    align-items: center
+    margin-right: 5.8rem
+  &-list
+    display: flex
+    align-items: center
+    li
+      font-size: 1.8rem
+      font-weight: 500
+      &:not(:last-child)
+        margin-right: 3.4rem
+  &-side
+    position: absolute
+    top: 0
+    right: 0
+    width: 7.5rem
+    height: 60.9rem
+    background: #F4F4F8
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-language
+    width: 4.5rem
+    margin: 5.5rem 0
+    margin-left: .5rem
+    position: relative
+    &__item
+      width: 100%
+      display: block
+      font-size: 1.6rem
+      font-weight: 700
+      color: #171629
+      position: relative
+      // padding-right: 2.5rem
+      cursor: pointer
+      &::after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+        width: 1.8rem
+        height: 1.6rem
+        background: url(../img/lang-arrow.svg) 50% no-repeat
+        background-size: contain
+        transition: transform .25s
+    &__dropdown-item
+      display: block
+      padding: 1.6rem 0
+      font-size: 1.6rem
+      font-weight: 700
+      color: #171629
+      cursor: pointer
+      border-bottom: 1px solid rgba(#5A5C64, .3)
+    .select
+      &_checked
+        &.active
+          .header-language__item::after
+            transform: translateY(-50%) rotate(-180deg)
+      &-dropdown
+        display: none
+        position: absolute
+        top: calc(100% + 1.2rem)
+        left: 0
+        width: 85%
+        border-top: 1px solid rgba(#5A5C64, .3)
+  &-social
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    // margin-bottom: 5.5rem
+    margin-bottom: 12.5rem
+    &__item
+      width: 3.8rem
+      height: 3.8rem
+      // background: #F4F4F8
+      border: 1.3px solid #C9CBD3
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-shrink: 0
+      img
+        width: 1.9rem
+      &:not(:last-child)
+        margin-bottom: 2.9rem

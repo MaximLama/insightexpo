@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+	<!-- <meta name="description" content="another website"> -->
+	<!-- <link rel="icon" href="img/favicon.png"> -->
+	<title>Insight Expo</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-content">
+				<a href="index.html" class="header-logo">
+					<img src="img/logo.svg" alt="">
+				</a>
+
+				<div class="header-img">
+					<!-- <img src="img/logo-2.png" alt=""> -->
+					<img src="img/logo-2.svg" alt="">
+					<img src="img/logo-2-b.svg" alt="" class="header-img__black">
+				</div>
+
+				<nav class="header-nav">
+					<div class="header-nav__left">
+						<ul class="header-list">
+							<li class="mobile"><a href="index.html">Главная</a></li>
+							<li><a href="services.html">Сервисы</a></li>
+							<li><a href="portfolio.html">Портфолио</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+
+						<a href="#" class="header-btn btn mobile">Оставить заявку</a>
+
+						<div class="header-info mobile">
+							<div class="header-info__item">
+								<div class="header-info__img">
+									<img src="img/info-icon-1.svg" alt="">
+								</div>
+								<div class="header-info__text">117393, г. Москва, <br> Ул. Профсоюзная, Д.76</div>
+							</div>
+
+							<a href="tel:74957903608" class="header-info__item">
+								<div class="header-info__img">
+									<img src="img/info-icon-2.svg" alt="">
+								</div>
+								<div class="header-info__text">+7 495 790 36 08</div>
+							</a>
+
+							<a href="mailto:info@insightexpo.com" class="header-info__item">
+								<div class="header-info__img">
+									<img src="img/info-icon-3.svg" alt="">
+								</div>
+								<div class="header-info__text">info@insightexpo.com</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="header-social mobile">
+						<a href="#" class="header-social__item">
+							<img src="img/social-1-w.svg" alt="">
+						</a>
+						<a href="#" class="header-social__item">
+							<img src="img/social-4-w.svg" alt="">
+						</a>
+					</div>
+				</nav>
+
+				<div class="header-right mobile">
+					<div class="header-language">
+						<input type="hidden" class="header-language__select" value="RU">
+						<div class="select">
+							<div class="select_checked language-select_checked">
+								<span class="select-text header-language__item">RU</span>
+							</div>
+							<div class="select-dropdown">
+								<div class="header-language__dropdown-item d-none" data-language="RU">RU</div>
+								<div class="header-language__dropdown-item" data-language="EN">EN</div>
+								<div class="header-language__dropdown-item" data-language="AE">AE</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="header-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-side">
+			<div class="header-language">
+				<input type="hidden" class="header-language__select" value="RU">
+				<div class="select">
+					<div class="select_checked language-select_checked">
+						<span class="select-text header-language__item">RU</span>
+					</div>
+					<div class="select-dropdown">
+						<div class="header-language__dropdown-item d-none" data-language="RU">RU</div>
+						<div class="header-language__dropdown-item" data-language="EN">EN</div>
+						<div class="header-language__dropdown-item" data-language="AE">AE</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-social">
+				<a href="#" class="header-social__item">
+					<img src="img/social-1.svg" alt="">
+				</a>
+				<a href="#" class="header-social__item">
+					<img src="img/social-4.svg" alt="">
+				</a>
+				<!-- <a href="#" class="header-social__item">
+					<img src="img/social-3.svg" alt="">
+				</a> -->
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="banner">
+			<!-- <img src="img/banner-bg.png" alt="" class="banner-bg desktop"> -->
+
+			<video src="video/video.mp4" class="banner-bg desktop" id="video" loop muted autoplay playsinline></video>
+			<video src="video/video-mobile.mp4" class="banner-bg mobile" loop muted autoplay playsinline></video>
+
+			<!-- <video src="http://www.html5rocks.com/tutorials/video/basics/Chrome_ImF.mp4" class="banner-bg" id="video" loop muted autoplay playsinline></video> -->
+
+			<!-- <img src="img/banner-bg-mobile.png" alt="" class="banner-bg mobile"> -->
+			<div class="container">
+				<div class="section-grid">
+					<span class="section-grid__item"></span>
+					<span class="section-grid__item"></span>
+					<span class="section-grid__item mobile"></span>
+				</div>
+				<div class="banner-content">
+					<div class="banner-title">WE CREATE</div>
+				</div>
+			</div>
+			<div class="banner-sidebar">
+				<ul class="banner-sidebar__links">
+					<li><a href="#" class="banner-sidebar__link link">Выставочные стенды</a></li>
+					<li><a href="#" class="banner-sidebar__link link">Ивенты</a></li>
+					<li><a href="#" class="banner-sidebar__link link">Концепции</a></li>
+				</ul>
+				
+				<a href="services.html#slide5" class="banner-sidebar__btn btn">Оставить заявку</a>
+				<div class="banner-sidebar__text">
+					<div class="banner-sidebar__title">INSIGHT EXPO</div>
+					<div class="banner-sidebar__subtitle">Агентство полного цикла</div>
+				</div>
+
+				<div class="banner-sidebar__social mobile">
+					<a href="#" class="banner-sidebar__social-item">
+						<img src="img/social-1.svg" alt="">
+					</a>
+					<a href="#" class="banner-sidebar__social-item">
+						<img src="img/social-4.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="video">
+			<div class="video-decor">YOUTUBE</div>
+			<div class="container">
+				<div class="video-content">
+					<div class="video-text">
+						<div class="video-title title">Видео кейсы</div>
+						<div class="video-description">Комплексная реализация выставочных проектов</div>
+
+						<div class="slider-kit">
+							<div class="swiper-button-prev slider-button-prev video-button-prev"></div>
+							<div class="swiper-button-next slider-button-next video-button-next"></div>
+						</div>
+					</div>
+
+					<div class="swiper video-slider" id="video-slider">
+						<div class="swiper-wrapper video-slider-wrapper">
+							<div class="swiper-slide video-slider__item">
+								<div class="video-slider__img-wrap">
+									<div class="video-slider__img">
+										<img src="img/video-bg.png" alt="">
+									</div>
+								</div>
+								<div class="video-slider__info">
+									<div class="video-slider__length">
+										1:27
+									</div>
+									<div class="video-slider__text">
+										<div class="video-slider__title">Exhibition stand at Metal Expo 2021</div>
+										<div class="video-slider__subtitle">3 месяца назад</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide video-slider__item">
+								<div class="video-slider__img-wrap">
+									<div class="video-slider__img">
+										<img src="img/video-bg-2.png" alt="">
+									</div>
+								</div>
+								<div class="video-slider__info">
+									<div class="video-slider__length">
+										1:27
+									</div>
+									<div class="video-slider__text">
+										<div class="video-slider__title">Exhibition stand at Metal Expo 2021</div>
+										<div class="video-slider__subtitle">3 месяца назад</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide video-slider__item">
+								<div class="video-slider__img-wrap">
+									<div class="video-slider__img">
+										<img src="img/video-bg.png" alt="">
+									</div>
+								</div>
+								<div class="video-slider__info">
+									<div class="video-slider__length">
+										1:27
+									</div>
+									<div class="video-slider__text">
+										<div class="video-slider__title">Exhibition stand at Metal Expo 2021</div>
+										<div class="video-slider__subtitle">3 месяца назад</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide video-slider__item">
+								<div class="video-slider__img-wrap">
+									<div class="video-slider__img">
+										<img src="img/video-bg-2.png" alt="">
+									</div>
+								</div>
+								<div class="video-slider__info">
+									<div class="video-slider__length">
+										1:27
+									</div>
+									<div class="video-slider__text">
+										<div class="video-slider__title">Exhibition stand at Metal Expo 2021</div>
+										<div class="video-slider__subtitle">3 месяца назад</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide video-slider__item">
+								<div class="video-slider__img-wrap">
+									<div class="video-slider__img">
+										<img src="img/video-bg.png" alt="">
+									</div>
+								</div>
+								<div class="video-slider__info">
+									<div class="video-slider__length">
+										1:27
+									</div>
+									<div class="video-slider__text">
+										<div class="video-slider__title">Exhibition stand at Metal Expo 2021</div>
+										<div class="video-slider__subtitle">3 месяца назад</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination slider-pagination video-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+			<img src="img/advantages-bg.png" alt="" class="advantages-bg desktop">
+			<img src="img/advantages-bg-mobile.png" alt="" class="advantages-bg mobile">
+			<div class="container">
+				<div class="advantages-heading">
+					<div class="advantages-heading__left">
+						<div class="swiper-pagination slider-pagination advantages-pagination"></div>
+						<div class="advantages-title title ml">Наши преимущества</div>
+					</div>
+					
+					<div class="slider-kit">
+						<div class="swiper-button-prev slider-button-prev advantages-button-prev"></div>
+						<div class="swiper-button-next slider-button-next advantages-button-next"></div>
+					</div>
+				</div>
+				
+				<div class="advantages-content">
+					<div class="swiper advantages-slider" id="advantages-slider">
+						<div class="swiper-wrapper advantages-slider-wrapper">
+							<div class="swiper-slide advantages-slider__item">
+								<div class="advantages-slider__number"># 01</div>
+								<div class="advantages-slider__title">Более 10 лет опыта реализации проектов</div>
+								<div class="advantages-slider__img">
+									<img src="img/advantages-6.svg" alt="">
+									<img src="img/advantages-6-active.svg" alt="" class="advantages-hover">
+								</div>
+							</div>
+
+							<div class="swiper-slide advantages-slider__item">
+								<div class="advantages-slider__number"># 02</div>
+								<div class="advantages-slider__title">Собственное производство</div>
+								<div class="advantages-slider__img">
+									<img src="img/advantages-1.svg" alt="">
+									<img src="img/advantages-1-active.svg" alt="" class="advantages-hover">
+								</div>
+							</div>
+
+							<div class="swiper-slide advantages-slider__item">
+								<div class="advantages-slider__number"># 03</div>
+								<div class="advantages-slider__title">Профес&shy;сиональный англоговоря&shy;щий персонал</div>
+								<div class="advantages-slider__img">
+									<img src="img/advantages-2.svg" alt="">
+									<img src="img/advantages-2-active.svg" alt="" class="advantages-hover">
+								</div>
+							</div>
+
+							<div class="swiper-slide advantages-slider__item">
+								<div class="advantages-slider__number"># 04</div>
+								<div class="advantages-slider__title">Менеджмент на&nbsp;уровне <br> между&shy;народных стандартов</div>
+								<div class="advantages-slider__img">
+									<img src="img/advantages-3.svg" alt="">
+									<img src="img/advantages-3-active.svg" alt="" class="advantages-hover">
+								</div>
+							</div>
+
+							<div class="swiper-slide advantages-slider__item">
+								<div class="advantages-slider__number"># 05</div>
+								<div class="advantages-slider__title">Бережное отношение к&nbsp;интересам клиентов</div>
+								<div class="advantages-slider__img">
+									<img src="img/advantages-7.svg" alt="">
+									<img src="img/advantages-7-active.svg" alt="" class="advantages-hover">
+								</div>
+							</div>
+
+							<div class="swiper-slide advantages-slider__item">
+								<div class="advantages-slider__number"># 06</div>
+								<div class="advantages-slider__title">Высокая ответствен&shy;ность за&nbsp;результат</div>
+								<div class="advantages-slider__img">
+									<img src="img/advantages-4.svg" alt="">
+									<img src="img/advantages-4-active.svg" alt="" class="advantages-hover">
+								</div>
+							</div>
+
+							<div class="swiper-slide advantages-slider__item">
+								<div class="advantages-slider__number"># 07</div>
+								<div class="advantages-slider__title">Надежная сеть партнерских компаний по всему миру</div>
+								<div class="advantages-slider__img">
+									<img src="img/advantages-5.svg" alt="">
+									<img src="img/advantages-5-active.svg" alt="" class="advantages-hover">
+								</div>
+							</div>
+
+							<div class="swiper-slide advantages-slider__item">
+								<div class="advantages-slider__number"># 08</div>
+								<div class="advantages-slider__title">Комплексная реализация проектов</div>
+								<div class="advantages-slider__img">
+									<img src="img/advantages-8.svg" alt="">
+									<img src="img/advantages-8-active.svg" alt="" class="advantages-hover">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="certificates">
+			<div class="container">
+				<div class="certificates-heading">
+					<div class="certificates-heading__left">
+						<div class="swiper-pagination slider-pagination certificates-pagination"></div>
+						<div class="certificates-title title ml">Наши сертификаты</div>
+					</div>
+					
+					<div class="slider-kit">
+						<div class="swiper-button-prev slider-button-prev certificates-button-prev"></div>
+						<div class="swiper-button-next slider-button-next certificates-button-next"></div>
+					</div>
+				</div>
+				
+				<div class="certificates-content">
+					<div class="swiper certificates-slider" id="certificates-slider">
+						<div class="swiper-wrapper certificates-slider-wrapper">
+							<div class="swiper-slide certificates-slider__item">
+								<div class="certificates-slider__box">
+									<div class="certificates-slider__img">
+										<img src="img/certificate.png" alt="">
+									</div>
+									<div class="certificates-slider__text">
+										<div class="certificates-slider__title">Сертификат соответствия ISO 9001:2015</div>
+										<!-- <div class="certificates-slider__subtitle">ЦРБ Сертификация</div> -->
+									</div>
+								</div>
+
+								<div class="certificates-slider__number"><span>#</span> 01</div>
+
+								<a href="#" class="certificates-slider__link">
+									<img src="img/link-w.svg" alt="">
+								</a>
+							</div>
+							
+							<div class="swiper-slide certificates-slider__item">
+								<div class="certificates-slider__box">
+									<div class="certificates-slider__img">
+										<img src="img/certificate.png" alt="">
+									</div>
+									<div class="certificates-slider__text">
+										<div class="certificates-slider__title">Сертификат <br> IFES</div>
+										<!-- <div class="certificates-slider__subtitle">ЦРБ Сертификация</div> -->
+									</div>
+								</div>
+
+								<div class="certificates-slider__number"><span>#</span> 02</div>
+
+								<a href="#" class="certificates-slider__link">
+									<img src="img/link-w.svg" alt="">
+								</a>
+							</div>
+
+							<div class="swiper-slide certificates-slider__item">
+								<div class="certificates-slider__box">
+									<div class="certificates-slider__img">
+										<img src="img/certificate.png" alt="">
+									</div>
+									<div class="certificates-slider__text">
+										<div class="certificates-slider__title">Бизнес-лицензия <br> в ОАЭ</div>
+										<!-- <div class="certificates-slider__subtitle">ЦРБ Сертификация</div> -->
+									</div>
+								</div>
+
+								<div class="certificates-slider__number"><span>#</span> 03</div>
+
+								<a href="#" class="certificates-slider__link">
+									<img src="img/link-w.svg" alt="">
+								</a>
+							</div>
+
+							<div class="swiper-slide certificates-slider__item">
+								<div class="certificates-slider__box">
+									<div class="certificates-slider__img">
+										<img src="img/certificate.png" alt="">
+									</div>
+									<div class="certificates-slider__text">
+										<div class="certificates-slider__title">Сертификат соответствия ISO 9001:2015</div>
+										<!-- <div class="certificates-slider__subtitle">ЦРБ Сертификация</div> -->
+									</div>
+								</div>
+
+								<div class="certificates-slider__number"><span>#</span> 04</div>
+
+								<a href="#" class="certificates-slider__link">
+									<img src="img/link-w.svg" alt="">
+								</a>
+							</div>
+
+							<div class="swiper-slide certificates-slider__item">
+								<div class="certificates-slider__box">
+									<div class="certificates-slider__img">
+										<img src="img/certificate.png" alt="">
+									</div>
+									<div class="certificates-slider__text">
+										<div class="certificates-slider__title">Сертификат <br> IFES</div>
+										<!-- <div class="certificates-slider__subtitle">ЦРБ Сертификация</div> -->
+									</div>
+								</div>
+
+								<div class="certificates-slider__number"><span>#</span> 05</div>
+
+								<a href="#" class="certificates-slider__link">
+									<img src="img/link-w.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container">
+				<div class="reviews-title title">Отзывы о нас</div>
+				<div class="reviews-content">
+					<div class="swiper reviews-slider" id="reviews-slider">
+						<div class="swiper-wrapper reviews-slider-wrapper">
+							<div class="swiper-slide reviews-slider__item">
+								<div class="reviews-slider__img">
+									<img src="img/review-img.png" alt="">
+								</div>
+
+								<div class="reviews-slider__text">
+									<div class="reviews-slider__quotes">
+										<img src="img/quotes.svg" alt="">
+									</div>
+									<p>
+										В ноябре месяце 2021 в г. Москва в выставочном комплексе Экспоцентр проходила 32-я международная выставка
+										"Мебель, фурнитура и обивочные материалы". В период с 17.11.2021 по 27.11.2021 специалисты ООО "Инсайт Экспо"
+										выполняли работы по монтажу, демонтажу выставочной экспозиции ИООО "БРВ-Брест".
+									</p>
+
+									<p>
+										Весь комплекс работ был выполнен на высоком профессиональном уровне, качественно и в установленные сроки. При
+										выполнении работ в полном объеме учтены как требования технической документации, так и пожелания Заказчика.
+										Особая благодарность - руководителю проекта - Александру Носову. ИООО "БРВ-Брест" выражает надежду на
+										дальнейшее сотрудничество, а также готово рекомендовать Компанию, как высококвалифицированного подрядчика и
+										ответственного партнера.
+									</p>
+
+									<div class="reviews-slider__title">ИООО «БРВ-Брест»</div>
+
+									<!-- <a href="#" class="reviews-slider__link link">Все отзывы</a> -->
+								</div>
+							</div>
+
+							<div class="swiper-slide reviews-slider__item">
+								<div class="reviews-slider__img">
+									<img src="img/review-img.png" alt="">
+								</div>
+
+								<div class="reviews-slider__text">
+									<div class="reviews-slider__quotes">
+										<img src="img/quotes.svg" alt="">
+									</div>
+
+									<p>
+										В ноябре месяце 2021 в г. Москва в выставочном комплексе Экспоцентр проходила 32-я международная выставка
+										"Мебель, фурнитура и обивочные материалы". В период с 17.11.2021 по 27.11.2021 специалисты ООО "Инсайт Экспо"
+										выполняли работы по монтажу, демонтажу выставочной экспозиции ИООО "БРВ-Брест".
+									</p>
+
+									<div class="reviews-slider__title">ИООО «БРВ-Брест»</div>
+
+									<!-- <a href="#" class="reviews-slider__link link">Все отзывы</a> -->
+								</div>
+							</div>
+
+							<div class="swiper-slide reviews-slider__item">
+								<div class="reviews-slider__img">
+									<img src="img/review-img.png" alt="">
+								</div>
+
+								<div class="reviews-slider__text">
+									<div class="reviews-slider__quotes">
+										<img src="img/quotes.svg" alt="">
+									</div>
+
+									<p>
+										В ноябре месяце 2021 в г. Москва в выставочном комплексе Экспоцентр проходила 32-я международная выставка
+										"Мебель, фурнитура и обивочные материалы". В период с 17.11.2021 по 27.11.2021 специалисты ООО "Инсайт Экспо"
+										выполняли работы по монтажу, демонтажу выставочной экспозиции ИООО "БРВ-Брест".
+									</p>
+
+									<p>
+										Весь комплекс работ был выполнен на высоком профессиональном уровне, качественно и в установленные сроки. При
+										выполнении работ в полном объеме учтены как требования технической документации, так и пожелания Заказчика.
+									</p>
+
+									<div class="reviews-slider__title">ИООО «БРВ-Брест»</div>
+
+									<!-- <a href="#" class="reviews-slider__link link">Все отзывы</a> -->
+								</div>
+							</div>
+						</div>
+						
+						<div class="slider-kit">
+							<div class="swiper-button-prev slider-button-prev reviews-button-prev"></div>
+							<div class="swiper-button-next slider-button-next reviews-button-next"></div>
+						</div>
+					</div>
+
+					<!-- <a href="#" class="reviews-link link link-other">Все отзывы</a> -->
+				</div>
+				<div class="swiper-pagination slider-pagination reviews-pagination"></div>
+			</div>
+		</section>
+
+		<section class="clients">
+			<div class="container">
+				<div class="clients-title title">Среди наших клиентов</div>
+				<div class="clients-content">
+					<div class="swiper clients-slider" id="clients-slider">
+						<div class="swiper-wrapper clients-slider-wrapper">
+							<div class="swiper-slide clients-slider__item">
+								<img src="img/client-1.png" alt="">
+							</div>
+							
+							<div class="swiper-slide clients-slider__item">
+								<img src="img/client-2.png" alt="">
+							</div>
+
+							<div class="swiper-slide clients-slider__item">
+								<img src="img/client-3.png" alt="">
+							</div>
+
+							<div class="swiper-slide clients-slider__item">
+								<img src="img/client-4.png" alt="">
+							</div>
+							
+							<div class="swiper-slide clients-slider__item">
+								<img src="img/client-5.png" alt="">
+							</div>
+
+							<div class="swiper-slide clients-slider__item">
+								<img src="img/client-6.png" alt="">
+							</div>
+
+							<div class="swiper-slide clients-slider__item">
+								<img src="img/client-1.png" alt="">
+							</div>
+
+							<div class="swiper-slide clients-slider__item">
+								<img src="img/client-2.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination slider-pagination clients-pagination"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="construction">
+			<img src="img/construction-img.svg" alt="" class="construction-img desktop">
+			<img src="img/construction-img-mobile.svg" alt="" class="construction-img mobile">
+			<div class="construction-decor">WORLDWIDE</div>
+			<div class="container">
+				<div class="construction-content">
+					<div class="construction-blocks">
+						<div class="construction-block">
+							<div class="construction-block__number">50 +</div>
+							<div class="construction-block__title">проектов</div>
+						</div>
+						<div class="construction-block">
+							<div class="construction-block__number">17</div>
+							<div class="construction-block__title">стран</div>
+						</div>
+					</div>
+					<div class="construction-text">
+						<div class="construction-title title">Реализация проектов за рубежом</div>
+						<div class="construction-description">
+							<div class="construction-description__item">
+								Insight Expo реализует проекты по всему миру.
+								На&nbsp;данный момент наша команда обладает опытом застройки в 17 различных странах, и с каждым годом этот список
+								расширяется. Знания и опыт, приобретенные в процессе реализации проектов за рубежом, мы применяем при создании
+								концепций последующих проектов.
+							</div>
+							<div class="construction-description__item">
+								Наша команда владеет всеми необходимыми компетенциями, ресурсами и опытом для реализации Ваших проектов в любой точке мира.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="stages">
+			<div class="container">
+				<div class="stages-title title">Этапы реализации проекта</div>
+				<div class="stages-content">
+					<a href="#" class="stages-item">
+						<div class="stages-item__circle">
+							<div class="stages-item__number">
+								<span>#</span> 01
+							</div>
+						</div>
+						<div class="stages-item__title">Заполнение <br> брифа</div>
+					</a>
+
+					<a href="#" class="stages-item">
+						<div class="stages-item__circle">
+							<div class="stages-item__number">
+								<span>#</span> 02
+							</div>
+						</div>
+						<div class="stages-item__title">Разработка <br> концепции</div>
+					</a>
+
+					<a href="#" class="stages-item">
+						<div class="stages-item__circle">
+							<div class="stages-item__number">
+								<span>#</span> 03
+							</div>
+						</div>
+						<div class="stages-item__title">Производство</div>
+					</a>
+
+					<a href="#" class="stages-item">
+						<div class="stages-item__circle">
+							<div class="stages-item__number">
+								<span>#</span> 04
+							</div>
+						</div>
+						<div class="stages-item__title">Монтаж</div>
+					</a>
+
+					<div class="stages-item">
+						<div class="stages-item__circle">
+							<div class="stages-item__number">
+								<span>#</span> 05
+							</div>
+						</div>
+						<div class="stages-item__title">Сдача готового <br> проекта</div>
+					</div>
+
+					<a href="#" class="stages-item">
+						<div class="stages-item__circle">
+							<div class="stages-item__number">
+								<span>#</span> 06
+							</div>
+						</div>
+						<div class="stages-item__title">Обслуживание <br> во время выставки</div>
+					</a>
+
+					<div class="stages-item">
+						<div class="stages-item__circle">
+							<div class="stages-item__number">
+								<span>#</span> 07
+							</div>
+						</div>
+						<div class="stages-item__title">Демонтаж</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="other-stages other-stages-main">
+			<div class="container">
+				<div class="other-stages__title title">Изготовление выставочных стендов</div>
+				<div class="other-stages__content">
+					<div class="other-stages__img">
+						<img src="img/seo-img-1.png" alt="">
+					</div>
+					<div class="other-stages__text">
+						<div class="other-stages__group">
+							<p>
+								Каким бы ни был уровень и масштаб предстоящей выставки, самое главное – чтобы выставочный стенд уверенно выделялся на фоне стендов других участников, привлекал внимание посетителей, вызывал яркие эмоции и надолго оставался в их памяти.
+							</p>
+							<p>
+								Работу над будущим стендом мы начинаем с определения концепции, изучения продукта компании, понимания сильных сторон, которые нужно подчеркнуть. Детально изучаем техническое задание и пожелания клиента.
+							</p>
+							<p>На основе всего вышеперечисленного создается и визуализируется трехмерная модель стенда, прорабатываются детали технической реализации – применяемые материалы, цветовые и световые решения, используемые несущие конструкции и т.п.применяемые материалы, цветовые и световые решения, используемые несущие конструкции и т.п.</p>
+						</div>
+
+						<div class="other-stages__group">
+							<p>В обязательном порядке надежность будущей конструкции проверяется необходимыми расчетами, что гарантирует
+								стабильность эксплуатационных характеристик и полную безопасность.</p>
+							<p>Разрабатывая дизайн шоу-румов, бутиков, магазинов, необходимо учитывать особенности торговых площадей, это поможет максимально раскрыть сильные стороны помещения и нивелировать возможные недостатки, акцентируя внимание на стендах, товарах и&nbsp;комфорте посетителей и работников.</p>
+							<p>
+								Стилистика, выбранная при разработке оформления таких помещений, должна работать в первую очередь на бренд
+								компании, задействуя при этом доступную полезную площадь. В большинстве случаев стандартные и шаблонные решения,
+								даже будучи адаптированы под конкретный проект, проигрывают качеству индивидуальной разработки.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<a href="#" class="footer-logo">
+					<img src="img/logo.png" alt="">
+				</a>
+
+				<ul class="footer-list">
+					<li><a href="services.html">Сервисы</a></li>
+					<li><a href="portfolio.html">Портфолио</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+
+				<a href="#" class="footer-btn btn">Оставить заявку</a>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="footer-bottom__content">
+					<div class="footer-social">
+						<a href="#" class="footer-social__item">
+							<img src="img/social-1-w.svg" alt="">
+						</a>
+						<a href="#" class="footer-social__item">
+							<img src="img/social-4-w.svg" alt="">
+						</a>
+					</div>
+
+					<div class="footer-info">
+						<ul class="footer-info__block">
+							<li class="footer-info__item">ООО "Инсайт Экспо"</li>
+							<li class="footer-info__item">117393, г. Москва, Ул. Профсоюзная, Д.76</li>
+						</ul>
+
+						<ul class="footer-info__block">
+							<li class="footer-info__item">
+								<a href="tel:74957903608" class="footer-phone">+7 495 790 36 08</a>
+							</li>
+							<li class="footer-info__item">
+								<a href="mailto:info@insightexpo.com" class="footer-email">info@insightexpo.com</a>
+							</li>
+						</ul>
+					</div>
+
+					<a href="#" class="footer-copy">
+						<div class="footer-copy__text">
+							<div class="footer-copy__suptitle">Design & Dev by</div>
+							<div class="footer-copy__title"><span>Request</span> Design</div>
+						</div>
+						<div class="footer-copy__img">
+							<img src="img/copy.svg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- <div class="popup" id="popup">
+		<div class="popup-wrap">
+			<div class="popup-content">
+				<div class="popup-close">
+					<img src="img/delete.svg" alt="">
+				</div>
+				<form action="#" class="popup-form form border border-b">
+					<div class="popup-title">Пополнение баланса</div>
+
+					<div class="popup-subtitle">Введите сумму</div>
+
+					<label class="label-price">
+						<input type="text" value="2 190">
+					</label>
+
+					<div class="payments-title">Выберите способ оплаты</div>
+
+					<div class="payments-form__items">
+						<label>
+							<img src="img/payments-method-1.svg" alt="">
+							<input type="radio" name="popup-payments-method" class="visually-hidden" checked>
+							<span></span>
+						</label>
+						<label>
+							<img src="img/payments-method-2.svg" alt="">
+							<input type="radio" name="popup-payments-method" class="visually-hidden">
+							<span></span>
+						</label>
+						<label>
+							<img src="img/payments-method-3.svg" alt="">
+							<input type="radio" name="popup-payments-method" class="visually-hidden">
+							<span></span>
+						</label>
+						<label>
+							<img src="img/payments-method-4.svg" alt="">
+							<input type="radio" name="popup-payments-method" class="visually-hidden">
+							<span></span>
+						</label>
+						<label>
+							<img src="img/payments-method-5.svg" alt="">
+							<input type="radio" name="popup-payments-method" class="visually-hidden">
+							<span></span>
+						</label>
+						<label>
+							<img src="img/payments-method-6.svg" alt="">
+							<input type="radio" name="popup-payments-method" class="visually-hidden">
+							<span></span>
+						</label>
+						<label>
+							<img src="img/payments-method-7.svg" alt="">
+							<input type="radio" name="popup-payments-method" class="visually-hidden">
+							<span></span>
+						</label>
+						<label>
+							<img src="img/payments-method-8.svg" alt="">
+							<input type="radio" name="popup-payments-method" class="visually-hidden">
+							<span></span>
+						</label>
+					</div>
+
+					<div class="payments-form__info">
+						<div class="payments-form__info-title">
+							<img src="img/details-icon-3.svg" alt="">
+							Комиссия <span>10%</span> (взимается <span>при оплате</span>)
+						</div>
+						<ul class="payments-form__info-description">
+							<li>Включают в себя налоги и&nbsp;комиссию платежной системы</li>
+						</ul>
+					</div>
+
+					<button class="popup-form__btn btn">Пополнить баланс</button>
+				</form>
+			</div>
+		</div>
+	</div> -->
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

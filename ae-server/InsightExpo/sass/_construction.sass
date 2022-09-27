@@ -1,0 +1,92 @@
+.construction
+  margin-bottom: 21rem
+  position: relative
+  &-img
+    position: absolute
+    top: -9rem
+    left: 0
+    width: 98rem
+    z-index: -1
+    pointer-events: none
+  &-decor
+    position: absolute
+    top: -8rem
+    right: 5rem
+    font-size: 13rem
+    font-weight: 700
+    line-height: 1
+    color: rgba(66, 71, 83, 0.12)
+    pointer-events: none
+  &-content
+    display: flex
+    justify-content: space-between
+  &-block
+    width: 26.6rem
+    height: 26.1rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    flex-shrink: 0
+    border: .14rem solid rgba(255, 255, 255, 0.2)
+    background: #1C202A
+    backdrop-filter: blur(13.7rem)
+    overflow: hidden
+    position: relative
+    z-index: 1
+    &:first-child
+      &::after
+        content: ''
+        position: absolute
+        top: 6.3rem
+        left: 9.3rem
+        width: 38rem
+        height: 38rem
+        border-radius: 50%
+        background: linear-gradient(10.51deg, #E92723 30.38%, #6D2A3E 84.43%)
+        filter: blur(9rem)
+        z-index: -1
+    &:last-child
+      &::after
+        content: ''
+        position: absolute
+        top: 6.3rem
+        left: -25.7rem
+        width: 38rem
+        height: 38rem
+        border-radius: 50%
+        background: linear-gradient(10.51deg, #E92723 30.38%, #6D2A3E 84.43%)
+        filter: blur(9rem)
+        z-index: -1
+    &s
+      width: 38.3%
+      display: flex
+      justify-content: space-between
+      flex-shrink: 0
+      // margin-top: 2.3rem
+      margin-top: 2.7rem
+    &__number
+      font-size: 6rem
+      font-weight: 700
+      margin-bottom: 2.2rem
+    &__title
+      font-size: 1.44rem
+      font-weight: 700
+  &-text
+    width: 56.7%
+    flex-shrink: 0
+  &-title
+    // margin-bottom: 4.3rem
+    margin-bottom: 4.6rem
+  &-description
+    display: flex
+    justify-content: space-between
+    &__item
+      // width: 46.5%
+      width: 50.3%
+      font-size: 1.8rem
+      line-height: 1.44
+      letter-spacing: .02em
+      color: #E8EDF2
+      &:last-child
+        width: 45%

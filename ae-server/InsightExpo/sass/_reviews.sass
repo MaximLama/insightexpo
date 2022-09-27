@@ -1,0 +1,115 @@
+.reviews
+  margin-bottom: 21rem
+  .container
+    position: relative
+  &-title
+    position: absolute
+    // top: -1.7rem
+    top: -1rem
+    left: 69.7rem
+    z-index: 3
+  &-slider
+    margin-left: 10rem
+    padding-top: 0.7rem
+    padding-bottom: 1rem
+    &__item
+      display: flex
+      justify-content: space-between
+    &__img
+      width: 32.1%
+      height: 44.8rem
+      display: flex
+      justify-content: center
+      align-items: center
+      background: #E9EAEF
+      border: .15rem solid #FFFFFF
+      flex-shrink: 0
+      position: relative
+      margin-bottom: 3rem
+      &::before
+        content: ''
+        position: absolute
+        bottom: -2rem
+        right: -2.1rem
+        width: 23.6rem
+        height: 16.9rem
+        border: .15rem solid rgba(255, 255, 255, 0.15)
+        z-index: -1
+      img
+        // width: 39.6rem
+        width: 26.8rem
+        mix-blend-mode: darken
+        // margin-top: -1.5rem
+    &__quotes
+      width: 7rem
+      height: 11rem
+      display: flex
+      align-items: center
+      flex-shrink: 0
+      float: left
+      margin-right: 5.5rem
+    &__text
+      width: 60.5%
+      flex-shrink: 0
+      // padding: 9.8rem 0 5rem
+      padding: 9.6rem 2rem 7rem 0
+      font-size: 1.8rem
+      line-height: 1.44
+      letter-spacing: .02em
+      color: #E8EDF2
+      position: relative
+      p
+        // &:first-child
+        //   padding-left: 12.4rem
+        //   position: relative
+        //   &::before
+        //     content: ''
+        //     position: absolute
+        //     top: 50%
+        //     left: 0
+        //     transform: translateY(-50%)
+        //     width: 7rem
+        //     height: 5.2rem
+        //     background: url(../img/quotes.svg) 50% no-repeat
+        //     background-size: contain
+        &:nth-of-type(2)
+          clear: both
+          overflow: hidden
+          height: auto
+        &:not(:last-child)
+          // margin-bottom: 2.7rem
+          margin-bottom: 1.8rem
+      // &-img
+      //   width: 7rem
+      //   display: inline-block
+    &__title
+      position: absolute
+      bottom: 2.3rem
+      left: 0
+      font-size: 2.4rem
+      font-weight: 700
+      letter-spacing: .02em
+      margin-top: -1rem
+    &__link
+      position: absolute
+      bottom: 0
+      left: 0
+      letter-spacing: normal
+  &-link
+    position: absolute
+    bottom: 1rem
+    left: 69.7rem
+    z-index: 3
+  &-pagination.swiper-pagination
+    bottom: auto
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    flex-direction: column
+    .swiper-pagination-bullet
+      margin: .9rem 0
+  .slider-kit
+    position: absolute
+    // bottom: 0
+    top: 0
+    right: .2rem

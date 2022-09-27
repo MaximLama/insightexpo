@@ -1,0 +1,186 @@
+.portfolio
+  margin-bottom: -12.3rem
+  overflow: hidden
+  .container
+    position: relative
+  &-content
+    padding-bottom: 19.3rem
+  &-slider
+    overflow: visible
+    // padding-top: 10.7rem
+    padding-top: 1rem
+    padding-bottom: 22rem
+    // transform: translateX(-5rem)
+    // width: calc(100% + 5rem)
+    // padding-left: 5rem
+    margin-left: -8.5rem
+    &-year
+      position: absolute
+      top: 1.4rem
+      left: 57.8rem
+      font-size: 2rem
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.07em
+    &-wrapper
+      align-items: center
+      height: 59rem
+    &__item
+      width: 24.2rem
+      height: auto
+      flex-shrink: 0
+      // transition: transform 1.2s -1.2s
+      transition: transform 1.2s
+      // transition: transform .3s
+      &:not(:last-child)
+        margin-right: 6.4rem
+      // &.swiper-slide-next
+      //   // transform: translateX(63.5rem)
+      //   transform: translateX(69.5rem)
+      //   ~ .portfolio-slider__item
+      //     // transform: translateX(63.5rem)
+      //     transform: translateX(69.5rem)
+      &:last-child
+        // margin-right: 63.5rem
+        // margin-right: 69.5rem
+      // &.asd.swiper-slide-active
+      //   transform: translateX(5.5rem)
+      //   ~ .portfolio-slider__item
+      //     transform: translateX(69.5rem)
+      &.swiper-slide-active
+        display: flex
+        align-items: flex-end
+        transform: translateX(5.5rem)
+        // width: 93.5rem
+        ~ .portfolio-slider__item
+          transform: translateX(69.5rem)
+        .portfolio-slider
+          &__img
+            width: 49.6rem
+            height: 59rem
+            margin-bottom: 0
+            &::after
+              content: ''
+            &::before
+              content: ''
+          &__area
+            display: block
+          &__description
+            display: block
+          &__text
+            width: 25rem
+            margin-left: 6rem
+          &__title
+            font-size: 5rem
+            line-height: 1.44
+            margin-bottom: 8.5rem
+            margin-left: -12.5rem
+          &__address
+            display: block
+          &__name
+            font-size: 2.3rem
+            color: #fff
+            margin-bottom: 1.3rem
+          &__year
+            display: block
+          &__btn
+            display: inline-flex
+    &__img
+      width: 100%
+      height: 32.2rem
+      margin-bottom: 2.4rem
+      flex-shrink: 0
+      position: relative
+      transition: all 1.2s ease-in-out
+      img
+        height: 100%
+        object-fit: cover
+      &::after
+        content: none
+        position: absolute
+        bottom: -8.7rem
+        right: -1.9rem
+        width: 47rem
+        height: 43rem
+        background: #13161D
+        filter: blur(5rem)
+        z-index: -1
+      &::before
+        content: none
+        position: absolute
+        inset: 0
+        background: rgba(0, 0, 0, 0.2)
+    &__area
+      display: none
+      position: absolute
+      bottom: 2.7rem
+      left: 4.5rem
+      font-size: 3.8rem
+      font-weight: 700
+      span
+        font-size: 4.9rem
+        margin-right: 0.5rem
+      sup
+        font-size: 55%
+        top: -1.8rem
+        left: 0.2rem
+    &__description
+      display: none
+      position: absolute
+      right: 104%
+      bottom: 0
+      font-size: 1.3rem
+      +urw
+      font-weight: 700
+      letter-spacing: .1em
+      color: rgba(255, 255, 255, 0.58)
+      writing-mode: vertical-lr
+      text-transform: uppercase
+      transform: rotate(180deg)
+    &__text
+      position: relative
+    &__title
+      font-size: 2.2rem
+      font-weight: 700
+      margin-bottom: 1.3rem
+    &__address
+      display: none
+      font-size: 2.3rem
+      font-weight: 500
+      margin-bottom: 1.3rem
+    &__name
+      font-size: 1.6rem
+      font-weight: 500
+      color: rgba(255, 255, 255, 0.58)
+    &__year
+      display: none
+      font-size: 2.3rem
+      font-weight: 500
+      margin-bottom: 8.2rem
+    &__btn
+      display: none
+      padding-left: 4.2rem
+      padding-right: 9rem
+      &::after
+        right: 4rem
+  &-pagination.swiper-pagination
+    bottom: auto
+    top: 1rem
+    left: 8.5rem
+    font-size: 1.9rem
+    +urw
+    font-weight: 400
+    color: rgba(255, 255, 255, 0.4)
+    // letter-spacing: .01em
+    letter-spacing: .1em
+    .swiper-pagination-current
+      font-weight: 900
+      color: #fff
+      margin-bottom: 0.2rem
+      margin-right: 1rem
+    .swiper-pagination-total
+      margin-left: 1rem
+  .slider-kit
+    position: absolute
+    top: 0
+    right: 9.5rem
